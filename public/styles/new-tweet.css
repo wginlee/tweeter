@@ -21,3 +21,7 @@
   float: right;
   padding: 0 5px;
 }
+
+.char-exceeded{
+  color: red;
+}

@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function() {
   var test = $('.new-tweet');
   $('.new-tweet').on('input', 'textarea', function() {
       var charsLeft = 140 - this.value.length;

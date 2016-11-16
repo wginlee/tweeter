@@ -1,0 +1,90 @@
+article.tweet{
+  border: solid rgba(0,0,0, 0.2) 1px;
+  border-radius: 11px 11px 10px 10px;
+  border-top: none;
+  margin: 0 2em;
+  padding: 0px;
+}
+
+article.tweet:hover{
+  border:solid gray 1px;
+}
+
+article.tweet:hoover header{
+  border:solid gray 1px;
+}
+
+article.tweet header{
+  border: solid rgba(0,0,0, 0.2) 1px;
+  border-radius: 10px 10px 0 0;
+  border-right: none;
+  border-left:none;
+  border-bottom: none;
+
+  background-color: #eee;
+  height: 100px;
+
+}
+
+article.tweet footer{
+  /*border-color: red;*/
+  border-top: solid #eee 1px;
+  height: 40px;
+
+}
+
+article.tweet .name{
+  color: rgba(36,71,81, 0.8);
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+article.tweet:hover .name{
+  color: rgba(36,71,81, 1);
+
+}
+
+article.tweet .handle{
+  color: gray;
+  float: right;
+  line-height: 80px;
+  font-size: 80%;
+  position: relative;
+  right: 10px;
+}
+
+article.tweet .avatar {
+  border: solid rgba(0,0,0, 0.2) 1px;
+  border-radius: 10px;
+  float: left;
+  height: 80px;
+  margin: 10px;
+  width: 80px;
+}
+
+article.tweet .time-posted{
+  float: left;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+article.tweet .action-icons{
+  float: right;
+  line-height: 40px;
+  margin-right: 10px;
+  display: none;
+}
+
+article.tweet:hover .action-icons{
+/*  float: right;
+  line-height: 40px;
+  margin-right: 10px;*/
+  display: inline;
+}
+
+article.tweet .content{
+  height: 70px;
+  width: 100%;
+  margin: 10px;
+}

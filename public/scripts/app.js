@@ -4,6 +4,10 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+
+$(function() {
+
+
 // Fake data taken from tweets.json
 var data = [
   {
@@ -56,27 +60,33 @@ function renderTweets(tweets) {
   // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
+    console.log(tweets);
+
+  for (let tweet in tweets){
+    var $tweet = createTweetElement(tweets[tweet]);
+    $('#tweets-container').append($tweet);
+  }
 }
 
 function createTweetElement(tweet) {
   var $tweet = $('<article>').addClass('tweet');
-  // ...
-        // <article class="tweet">
-        //   <header>
-        //     <img class="avatar" src="/images/bird.png">
-        //     <span class="name">Tweety Bird</span>
-        //     <span class="handle">@itawapuddytat</span>
-        //   </header>
-        //   <p class="main-tweet">Little tweet here</p>
-        //   <footer>
-        //     <span class="time-posted">10 days ago</span>
-        //     <span class="action-icons">icons</span>
-        //   </footer>
-        // </article>
 
+  var $header = $('<header>');
+  $header.append($('<img>').addClass('avatar').attr({src: tweet.user.avatars.regular}));
+  $header.append($('<span>').addClass('name').text(tweet.user.name));
+  $header.append($('<span>').addClass('handle').text(tweet.user.handle));
 
+  var $content = $('<p>').addClass('content').text(tweet.content.text);
+
+  var $footer = $('<footer>');
+  $footer.append($('<span>').addClass('time-posted').text(moment(tweet.created_at).fromNow()));
+  $footer.append($('<span>').addClass('action-icons').text("icons"));
+
+  $tweet.append($header).append($content).append($footer);
 
   return $tweet;
 }
 
-// renderTweets(data);
+renderTweets(data);
+
+});

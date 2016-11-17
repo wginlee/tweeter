@@ -1,5 +1,4 @@
 $(function() {
-  var test = $('.new-tweet');
   $('.new-tweet').on('input', 'textarea', function() {
       var charsLeft = 140 - this.value.length;
       var counter = $(this).siblings('.counter');

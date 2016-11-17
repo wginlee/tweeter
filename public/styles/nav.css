@@ -22,3 +22,19 @@
   line-height: 80px;
   padding: 0 10px;
 }
+
+#nav-bar .button{
+  background-color: #e8fdff;
+  border: solid black 2px;
+  border-radius: 5px;
+  color: #00a087;
+  float: right;
+  font-size: 120%;
+  line-height: 40px;
+  padding: 0 10px;
+}
+
+#nav-bar .button:hover{
+  background-color: white;
+  color: black;
+}

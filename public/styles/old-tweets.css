@@ -34,7 +34,7 @@ article.tweet footer{
 }
 
 article.tweet .name{
-  color: rgba(36,71,81, 0.8);
+  color: rgba(36,71,81, 0.5);
   font-size: 150%;
   font-weight: bold;
   line-height: 80px;

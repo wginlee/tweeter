@@ -53,7 +53,7 @@ $(function() {
 
     for (let tweet in tweets){
       var $tweet = createTweetElement(tweets[tweet]);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     }
   }
 
@@ -84,9 +84,9 @@ $(function() {
 
     theForm.find('textarea[name=text]').val(''); //clears the textarea
     flash.text("");
+    theForm.find('.counter').text("140"); //resets the counter
   });
 
-  $('new-tweet').hide();
 
   $('#nav-bar .button').click(function() {
     $('.new-tweet').slideToggle();

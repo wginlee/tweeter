@@ -30,6 +30,5 @@ module.exports = function makeDataHelpers(db) {
         db.collection("tweets").find().sort(sortNewestFirst).toArray(callback);
 
     }
-
   };
 }

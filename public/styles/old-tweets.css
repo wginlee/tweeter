@@ -2,7 +2,7 @@ article.tweet{
   border: solid rgba(0,0,0, 0.2) 1px;
   border-radius: 11px 11px 10px 10px;
   border-top: none;
-  margin: 0 2em;
+  margin: 10px 2em;
   padding: 0px;
 }
 
@@ -26,7 +26,6 @@ article.tweet header{
 }
 
 article.tweet footer{
-  /*border-color: red;*/
   border-top: solid #eee 1px;
   height: 40px;
 
@@ -68,7 +67,9 @@ article.tweet .time-posted{
 }
 
 article.tweet .action-icons{
+  color: #00a087;
   float: right;
+  letter-spacing: 6px;
   line-height: 40px;
   margin-right: 10px;
   display: none;

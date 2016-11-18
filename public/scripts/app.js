@@ -20,7 +20,13 @@ $(function() {
 
     var $footer = $('<footer>');
     $footer.append($('<span>').addClass('time-posted').text(moment(tweet.created_at).fromNow()));
-    $footer.append($('<span>').addClass('action-icons').text("icons"));
+    // $footer.append($('<span>').addClass('action-icons').text("icons"));
+    var $icons = $('<span>').addClass('action-icons');
+    $icons.append($('<i>').addClass('fa fa-flag').attr({'aria-hidden': true}));
+    $icons.append($('<i>').addClass('fa fa-retweet').attr({'aria-hidden': true}));
+    $icons.append($('<i>').addClass('fa fa-heart').attr({'aria-hidden': true}));
+
+    $footer.append($icons);
 
     $tweet.append($header).append($content).append($footer);
 

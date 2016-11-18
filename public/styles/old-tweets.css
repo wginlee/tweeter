@@ -20,7 +20,6 @@ article.tweet header{
   border-right: none;
   border-left:none;
   border-bottom: none;
-
   background-color: #eee;
   height: 100px;
 
@@ -48,10 +47,9 @@ article.tweet:hover .name{
 article.tweet .handle{
   color: gray;
   float: right;
-  line-height: 80px;
   font-size: 80%;
-  position: relative;
-  right: 10px;
+  line-height: 80px;
+  padding-right: 10px;
 }
 
 article.tweet .avatar {
@@ -77,15 +75,11 @@ article.tweet .action-icons{
 }
 
 article.tweet:hover .action-icons{
-/*  float: right;
-  line-height: 40px;
-  margin-right: 10px;*/
   display: inline;
 }
 
 article.tweet .content{
-  margin: 10px;
-  min-height: 70px;
-  overflow-wrap: break-word;
 
+  overflow-wrap: break-word;
+  padding: 0 10px;
 }

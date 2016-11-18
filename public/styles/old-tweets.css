@@ -84,7 +84,8 @@ article.tweet:hover .action-icons{
 }
 
 article.tweet .content{
-  height: 70px;
-  width: 100%;
   margin: 10px;
+  min-height: 70px;
+  overflow-wrap: break-word;
+
 }

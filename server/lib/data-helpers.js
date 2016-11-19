@@ -1,17 +1,5 @@
 "use strict";
 
-const MongoClient = require("mongodb").MongoClient;
-const MONGODB_URI = "mongodb://localhost:27017/tweeter";
-
-function connect(cb) {
-  MongoClient.connect(MONGODB_URI, function(err, db) {
-    if (err) throw err;
-    console.log("Connected correctly to server");
-
-    cb(null, db);
-  });
-}
-
 // Simulates the kind of delay we see with network or filesystem operations
 // const simulateDelay = require("./util/simulate-delay");
 

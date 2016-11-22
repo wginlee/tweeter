@@ -11,19 +11,6 @@
   z-index: 2;
 }
 
-#nav-bar .logo {
-  float: left;
-  height: 80px;
-  width: 80px;
-}
-
-#nav-bar .header {
-  float: left;
-  font-size: 200%;
-  line-height: 80px;
-  padding: 0 10px;
-}
-
 #nav-bar .button{
   background-color: #e8fdff;
   border: solid black 2px;
@@ -38,4 +25,17 @@
 #nav-bar .button:hover{
   background-color: white;
   color: black;
+}
+
+#nav-bar .header {
+  float: left;
+  font-size: 200%;
+  line-height: 80px;
+  padding: 0 10px;
+}
+
+#nav-bar .logo {
+  float: left;
+  height: 80px;
+  width: 80px;
 }

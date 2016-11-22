@@ -6,64 +6,13 @@ article.tweet{
   padding: 0px;
 }
 
-article.tweet:hover{
-  border:solid gray 1px;
-}
-
-article.tweet:hoover header{
-  border:solid gray 1px;
-}
-
-article.tweet header{
-  border: solid rgba(0,0,0, 0.2) 1px;
-  border-radius: 10px 10px 0 0;
-  border-right: none;
-  border-left:none;
-  border-bottom: none;
-  background-color: #eee;
-  height: 100px;
-
-}
-
 article.tweet footer{
   border-top: solid #eee 1px;
   height: 40px;
-
 }
 
-article.tweet .name{
-  color: rgba(36,71,81, 0.5);
-  font-size: 150%;
-  font-weight: bold;
-  line-height: 80px;
-}
-
-article.tweet:hover .name{
-  color: rgba(36,71,81, 1);
-
-}
-
-article.tweet .handle{
-  color: gray;
-  float: right;
-  font-size: 80%;
-  line-height: 80px;
-  padding-right: 10px;
-}
-
-article.tweet .avatar {
-  border: solid rgba(0,0,0, 0.2) 1px;
-  border-radius: 10px;
-  float: left;
-  height: 80px;
-  margin: 10px;
-  width: 80px;
-}
-
-article.tweet .time-posted{
-  float: left;
-  line-height: 40px;
-  margin-left: 10px;
+article.tweet:hover{
+  border:solid gray 1px;
 }
 
 article.tweet .action-icons{
@@ -79,8 +28,53 @@ article.tweet:hover .action-icons{
   display: inline;
 }
 
+article.tweet .avatar {
+  border: solid rgba(0,0,0, 0.2) 1px;
+  border-radius: 10px;
+  float: left;
+  height: 80px;
+  margin: 10px;
+  width: 80px;
+}
+
 article.tweet .content{
 
   overflow-wrap: break-word;
   padding: 0 10px;
 }
+
+article.tweet .handle{
+  color: gray;
+  float: right;
+  font-size: 80%;
+  line-height: 80px;
+  padding-right: 10px;
+}
+
+article.tweet header{
+  border: solid rgba(0,0,0, 0.2) 1px;
+  border-radius: 10px 10px 0 0;
+  border-right: none;
+  border-left:none;
+  border-bottom: none;
+  background-color: #eee;
+  height: 100px;
+}
+
+article.tweet .name{
+  color: rgba(36,71,81, 0.5);
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+article.tweet:hover .name{
+  color: rgba(36,71,81, 1);
+}
+
+article.tweet .time-posted{
+  float: left;
+  line-height: 40px;
+  margin-left: 10px;
+}
+

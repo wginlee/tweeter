@@ -7,14 +7,8 @@
   display: none;
 }
 
-.new-tweet textarea{
-  padding: 5px;
-  width: 100%;
-}
-
-.new-tweet h2{
-  margin: 10px 0;
-  border-bottom: solid 1px;
+.new-tweet .char-exceeded{
+  color: red;
 }
 
 .new-tweet .counter{
@@ -22,11 +16,18 @@
   padding: 0 5px;
 }
 
-.new-tweet .char-exceeded{
-  color: red;
-}
-
 .new-tweet .flash-message{
   color: red;
   margin-left: 10px;
 }
+
+.new-tweet h2{
+  margin: 10px 0;
+  border-bottom: solid 1px;
+}
+
+.new-tweet textarea{
+  padding: 5px;
+  width: 100%;
+}
+
